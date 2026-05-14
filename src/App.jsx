@@ -91,7 +91,7 @@ export default function HardikGameDevPortfolio() {
         "Sharp Shooter is a Unity 3D action game focused on engaging combat, target precision, responsive controls, and a fun arcade-style shooting experience. Built with gameplay logic, level flow, and visual polish in mind.",
       tech: ["Unity", "C#", "Game Logic", "UI", "Level Design"],
       icon: <Gamepad2 className="w-5 h-5" />,
-      image: "src/images/sharpshooter.png",
+      image: `${import.meta.env.BASE_URL}images/sharpshooter.png`,
       link: "https://hardikdandekar.itch.io/sharp-shooter",
     },
  
@@ -103,21 +103,21 @@ export default function HardikGameDevPortfolio() {
         "Rocket Boost is a physics-driven Unity game where players carefully control a rocket through obstacles and tricky environments. It focuses on movement precision, collision handling, and smooth gameplay feedback.",
       tech: ["Unity", "C#", "Physics", "Collision System", "Level Progression"],
       icon: <Play className="w-5 h-5" />,
-      image: "src/images/rocket.png",
+      image: `${import.meta.env.BASE_URL}images/rocket.png`,
       link: "https://hardikdandekar.itch.io/rooket-boost",
     },
     
     {
-      title: "Car Booking Admin Panel",
-      category: "React / Node.js / MongoDB",
-      short: "Professional admin dashboard for booking history, filters, and user management.",
+      title: "Car Rental Website",
+      category: "MERN Stack / Full-Stack Web App",
+      short: "Modern car rental platform with booking system, authentication, and responsive UI.",
       description:
-        "A full-stack admin panel for a car booking application with booking history, user details, filters, dashboard management, and a clean professional UI. Built using React for frontend and Node.js + MongoDB for backend.",
-      tech: ["React", "Node.js", "MongoDB", "Express", "Dashboard UI"],
+        "A full-stack car rental web application built using React, Node.js, Express.js, and MongoDB. Features include user authentication, car listings, booking management, responsive design, and an admin dashboard for managing cars and bookings.",
+      tech: ["React", "Node.js", "MongoDB", "Express", "REST API"],
       icon: <Briefcase className="w-5 h-5" />,
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
-      link: "#",
-    },
+      image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=80",
+      link: "https://carnation-frontend.onrender.com",
+    }
   ];
 
   const skills = [
@@ -177,7 +177,7 @@ export default function HardikGameDevPortfolio() {
               >
                 Hardik Dandekar
               </motion.h1>
-              <p className="text-gray-400 mt-2">Loading Ultra Premium Portfolio...</p>
+              <p className="text-gray-400 mt-2">Loading Portfolio...</p>
             </div>
           </motion.div>
         )}
@@ -295,7 +295,7 @@ export default function HardikGameDevPortfolio() {
                 Contact Me
               </a>
               <a
-                href="src/images/sharpshooter.png"
+               href={`${import.meta.env.BASE_URL}Resume.pdf`}
                 onMouseEnter={() => handleHover(true)}
                 onMouseLeave={() => handleHover(false)}
                 className="px-6 py-3 rounded-2xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-300 hover:bg-cyan-400/15 transition font-semibold flex items-center gap-2"
@@ -476,43 +476,34 @@ export default function HardikGameDevPortfolio() {
 
     {[
       {
-        title: " Orc Character!",
-        type: "Character modeling",
-        image:
-          "src/images/blend images/113.png",
+        title: "Orc Character",
+        type: "Character Modeling",
+        image: `${import.meta.env.BASE_URL}images/113.png`,
       },
       {
-        title: " Orc Character!",
-        type: "Character modeling",
-        image:
-          "src/images/blend images/114.png",
+        title: "Orc Character",
+        type: "Character Modeling",
+        image: `${import.meta.env.BASE_URL}images/114.png`,
       },
-
       {
         title: "Game Environment",
         type: "Stylized Scene",
-        image:
-         "src/images/blend images/real.png",
+        image: `${import.meta.env.BASE_URL}images/real.png`,
       },
       {
         title: "Robot Character",
         type: "Character Modeling",
-        image:
-          "src/images/blend images/robot.png",
+        image: `${import.meta.env.BASE_URL}images/robot.png`,
       },
-
-
       {
         title: "Robot Character",
         type: "Character Modeling",
-        image:
-          "src/images/blend images/robot3.png",
+        image: `${import.meta.env.BASE_URL}images/robot3.png`,
       },
       {
         title: "Scary Room",
         type: "Environment Art",
-        image:
-          "src/images/blend images/horrorRoom.png",
+        image: `${import.meta.env.BASE_URL}images/horrorRoom.png`,
       },
     ].map((asset, index) => (
       <motion.div
@@ -614,9 +605,9 @@ export default function HardikGameDevPortfolio() {
 
             <div className="grid sm:grid-cols-2 gap-4">
               {[
-                { icon: <Github className="w-5 h-5" />, label: "GitHub", href: "#" },
-                { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", href: "#" },
-                { icon: <Mail className="w-5 h-5" />, label: "Email", href: "#" },
+                { icon: <Github className="w-5 h-5" />, label: "GitHub", href: "https://github.com/HardikDandekar" },
+                { icon: <Linkedin className="w-5 h-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/hardik-dandekar-141104y/" },
+                { icon: <Mail className="w-5 h-5" />, label: "Email", href: " http://hardikdandekar35@gmail.com " },
                 { icon: <ExternalLink className="w-5 h-5" />, label: "Portfolio", href: "#" },
               ].map((item) => (
                 <a
